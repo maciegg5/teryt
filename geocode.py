@@ -8,7 +8,7 @@ from multiprocessing import Pool, cpu_count
 # 1. KONFIGURACJA
 # ------------------------------------------------------------
 
- geolocator = Nominatim(
+geolocator = Nominatim(
     user_agent="teryt-geocoder (github.com/TWOJ_LOGIN/TWOJE_REPO)",
     timeout=10
 )
