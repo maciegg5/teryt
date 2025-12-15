@@ -92,7 +92,13 @@ def process_row(row_dict):
 
 if __name__ == "__main__":
 
-    df = pd.read_csv("teryt.csv")  # plik w repozytorium
+    df = pd.read_excel('terc_urzedowy.xlsx', dtype={
+    "WOJ":str,
+    "POW":str,
+    "GMI":str,
+    "RODZ":str
+})
+
 
     print("Rozpoczynam sekwencyjne geokodowanie (GitHub Actions)...")
 
